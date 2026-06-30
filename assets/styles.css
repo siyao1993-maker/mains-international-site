@@ -163,12 +163,98 @@ h3 { font-size: 1.32rem; }
 }
 .hero-grid { display: grid; grid-template-columns: 1.12fr .88fr; gap: 3.5rem; align-items: center; }
 .hero-copy { padding-top: 2rem; }
-.hero-card { background: rgba(255,255,255,.92); border: 1px solid var(--line); border-radius: 24px; padding: 2rem; box-shadow: var(--shadow); display: grid; gap: 1.15rem; }
-.logo-panel { background: linear-gradient(180deg, #f8fcff, #eef8fc); border: 1px solid var(--line); border-radius: 18px; padding: 1.5rem; text-align: center; }
-.logo-panel img { width: 145px; display: block; margin: 0 auto; }
-.stat { padding: 1.25rem 1rem; background: #f8fcff; border-radius: 18px; border-left: 6px solid var(--blue); text-align: center; }
-.stat strong { font-family: 'Oswald', sans-serif; font-size: 2rem; color: var(--ink); display: block; line-height: 1.1; }
-.stat span { color: var(--muted); font-weight: 700; font-size: .92rem; }
+.hero-card {
+  position: relative;
+  overflow: hidden;
+  background:
+    linear-gradient(145deg, rgba(255,255,255,.96), rgba(239,249,254,.92)),
+    radial-gradient(circle at 88% 8%, rgba(2,158,232,.20), transparent 34%);
+  border: 1px solid rgba(2,158,232,.20);
+  border-radius: 30px;
+  padding: 1.4rem;
+  box-shadow: 0 28px 80px rgba(3, 44, 62, .16);
+  display: grid;
+  gap: 1.2rem;
+}
+.hero-card::before {
+  content: '';
+  position: absolute;
+  inset: -35% -20% auto auto;
+  width: 250px;
+  height: 250px;
+  border-radius: 999px;
+  background: rgba(2,158,232,.13);
+  filter: blur(4px);
+}
+.hero-card-top {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1rem 1.05rem;
+  background: rgba(255,255,255,.78);
+  border: 1px solid rgba(2,158,232,.16);
+  border-radius: 22px;
+}
+.hero-card-top img { width: 126px; height: auto; display: block; }
+.hero-card-top span {
+  color: var(--blue-dark);
+  background: rgba(2,158,232,.10);
+  border: 1px solid rgba(2,158,232,.18);
+  border-radius: 999px;
+  padding: .42rem .7rem;
+  font-size: .72rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: .05em;
+  white-space: nowrap;
+}
+.bridge-visual {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  gap: .85rem;
+  min-height: 172px;
+  padding: 1.2rem;
+  border-radius: 26px;
+  background:
+    linear-gradient(135deg, rgba(7,17,20,.96), rgba(1,120,181,.90)),
+    radial-gradient(circle at 20% 20%, rgba(82,184,233,.32), transparent 30%);
+  color: #fff;
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.18);
+}
+.bridge-node {
+  width: 92px;
+  height: 92px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  align-content: center;
+  background: rgba(255,255,255,.12);
+  border: 1px solid rgba(255,255,255,.30);
+  box-shadow: 0 14px 34px rgba(0,0,0,.16);
+}
+.bridge-node.active { background: linear-gradient(135deg, var(--blue), var(--light-blue)); border-color: rgba(255,255,255,.55); }
+.bridge-node strong { font-family: 'Oswald', sans-serif; font-size: 2rem; line-height: 1; }
+.bridge-node small { margin-top: .25rem; font-size: .72rem; opacity: .78; font-weight: 800; }
+.bridge-line { height: 3px; border-radius: 999px; background: rgba(255,255,255,.22); overflow: hidden; }
+.bridge-line span { display: block; width: 62%; height: 100%; border-radius: inherit; background: linear-gradient(90deg, #fff, var(--light-blue)); box-shadow: 0 0 22px rgba(82,184,233,.8); }
+.metric-grid { position: relative; z-index: 1; display: grid; grid-template-columns: repeat(2, 1fr); gap: .85rem; }
+.stat {
+  padding: 1.15rem .9rem;
+  background: rgba(255,255,255,.84);
+  border: 1px solid rgba(2,158,232,.16);
+  border-radius: 20px;
+  text-align: left;
+  box-shadow: 0 10px 28px rgba(5, 28, 38, .07);
+}
+.stat-wide { grid-column: 1 / -1; display: flex; align-items: baseline; gap: .8rem; }
+.stat strong { font-family: 'Oswald', sans-serif; font-size: 1.85rem; color: var(--ink); display: block; line-height: 1.02; }
+.stat span { color: var(--muted); font-weight: 800; font-size: .86rem; line-height: 1.35; }
 
 .cards { display: grid; gap: 1.5rem; margin-top: 2.5rem; }
 .cards.four { grid-template-columns: repeat(4, 1fr); }
