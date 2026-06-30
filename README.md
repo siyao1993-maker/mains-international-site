@@ -5,9 +5,17 @@ Statische prototypewebsite op basis van het aangeleverde Wix/Excel-bestand.
 ## Inhoud
 
 - `index.html` — moderne one-page prototypeversie
-- `assets/styles.css` — responsive styling
+- `assets/styles.css` — responsive styling met MAiNS huisstijl
+- `assets/mains-logo.svg` — gereconstrueerd web-logo op basis van brand book
 - `assets/reference-screenshots/` — selectie oude Wix-screenshots uit Excel als referentie
 - `robots.txt` — prototype staat standaard op noindex
+
+## Huisstijl toegepast
+
+- Kleuren: MAiNS blue `#029ee8`, MAiNS light blue `#52b8e9`, black `#000000`
+- Fonts: Oswald voor headings, Open Sans voor body copy
+- Tone of voice: vriendelijk, transparant, recht-door-zee, professioneel met informele ondertoon
+- Tagline: `Uncover, develop, create value`
 
 ## Nog bevestigen vóór livegang
 
