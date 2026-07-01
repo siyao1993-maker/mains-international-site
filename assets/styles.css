@@ -48,7 +48,7 @@ body {
   justify-content: space-between;
   gap: 1rem;
 }
-.brand img { width: 138px; height: auto; display: block; }
+.brand img { width: 150px; height: auto; display: block; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.2)); }
 .nav-links { display: flex; gap: .25rem; align-items: center; }
 .nav-links a {
   color: #233037;
@@ -220,6 +220,6 @@ h3 { font-size: 1.32rem; }
   .trade-line { grid-template-columns: 1fr; gap: .45rem; }
   .trade-line i { height: 1px; }
   .footer-bottom { flex-direction: column; }
-  .brand img { width: 120px; }
+  .brand img { width: 128px; }
   .language { width: 100%; order: 3; }
 }
