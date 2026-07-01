@@ -6,7 +6,7 @@ Statische prototypewebsite op basis van het aangeleverde Wix/Excel-bestand.
 
 - `index.html` — moderne one-page prototypeversie
 - `assets/styles.css` — responsive styling met MAiNS huisstijl
-- `assets/mains-logo.svg` — gereconstrueerd web-logo op basis van brand book
+- `assets/mains-logo.webp` / `assets/mains-logo.jpg` — officieel MAiNS-logo voor webgebruik
 - `assets/reference-screenshots/` — selectie oude Wix-screenshots uit Excel als referentie
 - `robots.txt` — prototype staat standaard op noindex
 
