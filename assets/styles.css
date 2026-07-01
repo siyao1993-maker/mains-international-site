@@ -78,7 +78,8 @@ body {
 .language span { color: var(--muted); cursor: default; }
 .language button:hover,
 .language button.active { border-color: var(--blue); background: var(--blue); color: #fff; }
-.lang-link { color: #fff; text-decoration: none; background: var(--blue); border: 1px solid var(--blue); border-radius: 999px; padding: .38rem .62rem; font-size: .72rem; font-weight: 900; }
+.lang-link { color: var(--ink); text-decoration: none; background: #fff; border: 1px solid rgba(2,158,232,.24); border-radius: 999px; padding: .38rem .62rem; font-size: .72rem; font-weight: 900; transition: .2s ease; }
+.lang-link:hover, .lang-link.active { background: var(--blue); color: #fff; border-color: var(--blue); }
 
 .section { padding: 104px 0; position: relative; }
 .section::before { content: ''; position: absolute; inset: 0 auto 0 0; width: 5px; background: linear-gradient(180deg, var(--blue), var(--light-blue)); opacity: .62; }
