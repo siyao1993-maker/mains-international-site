@@ -190,7 +190,7 @@ h3 { font-size: 1.32rem; }
 
 .footer { background: var(--ink); color: #d8ecf4; padding: 3rem 0 1.2rem; }
 .footer-grid { display: grid; grid-template-columns: 1.4fr 1fr 1fr 1fr; gap: 2rem; padding-bottom: 2rem; border-bottom: 1px solid rgba(255,255,255,.12); }
-.footer-logo { width: 190px; background: #fff; border-radius: 16px; padding: .45rem; margin-bottom: 1rem; }
+.footer-logo { width: 190px; background: rgba(247, 251, 253, .88); border: 1px solid rgba(216, 236, 244, .28); border-radius: 16px; padding: .45rem; margin-bottom: 1rem; box-shadow: 0 12px 32px rgba(0,0,0,.16); }
 .footer strong { display: block; color: #fff; margin-bottom: .8rem; font-family: 'Oswald', sans-serif; text-transform: uppercase; letter-spacing: .05em; }
 .footer a, .footer span, .footer p { display: block; color: #d8ecf4; text-decoration: none; margin: .25rem 0; }
 .footer a:hover { color: #fff; }
